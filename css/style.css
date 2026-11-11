@@ -361,7 +361,7 @@ a:hover { color: var(--blue); text-decoration: underline; }
 @media (max-width: 1024px) {
   .wst-header nav { font-size: 17px; }
   .wst-home h3 { font-size: 29px; }
-  .wst-testi > p, .wst-testi-foot p { font-size: 17px; }
+  .wst-home .wst-testi p { font-size: 17px; }
 }
 
 @media (max-width: 781px) {
