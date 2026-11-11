@@ -103,7 +103,7 @@ a:hover { color: var(--blue); text-decoration: underline; }
   -webkit-font-smoothing: antialiased;
 }
 .wst-home figure, .wst-home h1, .wst-home h2, .wst-home h3, .wst-home p { margin: 0; }
-.wst-home h1, .wst-home h2, .wst-home h3 { text-wrap: balance; }
+.wst-home, .wst-footer { text-wrap: pretty; }
 
 .wst-home h1, .wst-home h2 {
   font-family: Tahoma, Verdana, sans-serif;
@@ -207,7 +207,7 @@ a:hover { color: var(--blue); text-decoration: underline; }
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
-.wst-section--logos { padding: 42px 16px 46px; }
+.wst-section--logos { padding: 32px 16px; }
 
 /* Logo rows (+ marquee) */
 .wst-logos {
@@ -251,10 +251,9 @@ a:hover { color: var(--blue); text-decoration: underline; }
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 64px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
-.wst-section--solution .wst-grid { margin-top: 46px; }
 
 .wst-icobox { text-align: center; }
 .wst-icobox > p { min-height: 54px; margin: 0; }
@@ -274,13 +273,12 @@ a:hover { color: var(--blue); text-decoration: underline; }
 .wst-icobox--lg .wst-fa { font-size: 7rem; margin-bottom: 35px; }
 
 /* Uncertainty section */
-.wst-section--uncertainty .wst-icobox { margin-top: 10px; }
 .wst-section--uncertainty .wst-icobox > p { min-height: 0; }
-.wst-section--uncertainty .wst-buttons { margin-top: 30px; margin-bottom: 20px; }
+.wst-section--uncertainty .wst-buttons,
+.wst-section--solution .wst-buttons { margin-top: 20px; margin-bottom: 0; }
 
 /* Solution section */
 .wst-home h2.wst-curly { line-height: 1.2; margin: 18px 0 16px; }
-.wst-section--solution .wst-buttons { margin-top: 39px; margin-bottom: 20px; }
 
 /* Columns */
 .wst-columns { display: flex; flex-wrap: wrap; gap: 32px; }
@@ -346,6 +344,16 @@ a:hover { color: var(--blue); text-decoration: underline; }
 .wst-social a:hover { text-decoration: none; }
 
 /* ---------- Responsive ---------- */
+/* Extra vertical rhythm that the original only applies from 768px up */
+@media (min-width: 768px) {
+  .wst-section--logos { padding: 42px 16px 46px; }
+  .wst-grid { margin-top: 30px; margin-bottom: 10px; }
+  .wst-section--solution .wst-grid { margin-top: 46px; }
+  .wst-section--uncertainty .wst-icobox { margin-top: 10px; }
+  .wst-section--uncertainty .wst-buttons { margin-top: 30px; margin-bottom: 20px; }
+  .wst-section--solution .wst-buttons { margin-top: 39px; margin-bottom: 20px; }
+}
+
 @media (min-width: 782px) {
   .wst-columns { flex-wrap: nowrap; }
 }
@@ -365,6 +373,8 @@ a:hover { color: var(--blue); text-decoration: underline; }
   .wst-header { justify-content: flex-end; }
   .wst-header .wst-logo { display: none; }
   .wst-header-right { width: 100%; justify-content: space-between; }
+  .wst-header nav { font-size: 16px; }
+  .wst-header nav a { padding: 0 8px; }
 
   .wst-home h1, .wst-home h2 { font-size: 30px; }
   .wst-home h3 { font-size: 25px; }
