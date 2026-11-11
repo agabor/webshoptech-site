@@ -159,7 +159,7 @@
 
 /* testimonials */
 .os-page > .os-testimonials { background: #f8fafc; }
-.os-testimonials .os-cols { gap: 24px; align-items: stretch; margin-top: 40px; }
+.os-page > .os-testimonials > .os-cols { gap: 24px; align-items: stretch; margin-top: 40px; }
 .os-testi { display: flex; flex-direction: column; padding: 28px; }
 .os-testi > p:first-child { font-size: 1.0625rem; line-height: 1.65; color: var(--ink); padding-right: 28px; }
 .os-testi .os-person { margin-top: auto; padding-top: 20px; gap: 12px; }
