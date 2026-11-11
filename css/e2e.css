@@ -67,6 +67,8 @@
   padding: clamp(3.5rem, 6vw, 5.5rem) 24px clamp(2rem, 3.5vw, 3rem);
 }
 .os-hero .os-cols { gap: 48px 64px; }
+.os-hero .os-col:first-child { flex: 58 1 0; }
+.os-hero .os-col:last-child { flex: 42 1 0; }
 .os-hero h1 {
   font-size: clamp(2rem, 1.2rem + 1.9vw, 2.6rem);
   font-weight: 700; letter-spacing: -.02em; line-height: 1.1;
@@ -89,7 +91,7 @@
   background: #F8FAFC; font-size: 15px;
 }
 .os-row p { font-size: 15px; line-height: 1.6; }
-.os-row p:last-child { color: var(--hero-ink); line-height: 1.4; }
+.os-row p:last-child { color: var(--hero-ink); }
 .os-row mark { background: transparent; color: var(--blue-bright); }
 
 /* logos */
@@ -114,12 +116,12 @@
 .os-problem ul { padding-left: 40px; }
 .os-problem li { margin-top: 8px; }
 .os-problem li:first-child { margin-top: 8px; }
-.os-problem .os-note { font-size: 13px; line-height: 1.6; }
+.os-problem p.os-note { font-size: 13px; line-height: 1.6; }
 
 /* case */
-.os-page > .os-case { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.os-case .os-cols { gap: 40px 64px; align-items: center; }
-.os-case .os-col { flex-basis: 50%; flex-grow: 0; }
+.os-page > .os-case { background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.os-case .os-cols { gap: 40px 64px; align-items: stretch; }
+.os-case .os-col { flex: 1 1 0; }
 .os-case .os-col > div + div { margin-top: 28px; }
 .os-case figure img { border: 1px solid var(--border); border-radius: 12px; width: 100%; }
 
@@ -148,6 +150,7 @@
 .os-founder .os-buttons { margin-top: 8px !important; }
 
 /* what is checked */
+.os-page > .os-what { background: #fff; }
 .os-checks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 40px !important; }
 .os-checks .os-card { padding: 32px; }
 .os-checks .os-card:first-child { background: var(--hero-bg); border-color: var(--hero-bg); }
@@ -227,6 +230,7 @@
   .os-cols { flex-wrap: wrap; }
   .os-cols > .os-col, .os-case .os-col { flex: 1 1 100%; }
   .os-founder .os-col:first-child { flex: 1 1 100%; }
+  .os-hero .os-col:first-child, .os-hero .os-col:last-child { flex: 1 1 100%; }
   .os-hero .os-col:last-child { margin-top: 8px; }
   .os-logos img { height: 30px; }
   .os-checks { grid-template-columns: 1fr; }
