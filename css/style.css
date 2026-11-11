@@ -102,6 +102,7 @@ a:hover { color: var(--blue); text-decoration: underline; }
   -webkit-font-smoothing: antialiased;
 }
 .wst-home figure, .wst-home h1, .wst-home h2, .wst-home h3, .wst-home p { margin: 0; }
+.wst-home h1, .wst-home h2, .wst-home h3 { text-wrap: balance; }
 
 .wst-home h1, .wst-home h2 {
   font-family: Tahoma, Verdana, sans-serif;
@@ -287,7 +288,7 @@ a:hover { color: var(--blue); text-decoration: underline; }
 /* Founder */
 .wst-founder { gap: 32px 48px; }
 .wst-column--img { flex: 0 0 320px; }
-.wst-founder-img { margin-top: 9px; }
+.wst-home .wst-founder-img { margin-top: 9px; }
 .wst-founder-img img { display: block; width: 20rem; max-width: 100%; height: auto; border-radius: 2rem; }
 .wst-founder-img figcaption { font-size: 15px; line-height: 1.4; text-align: center; margin-top: .5rem; color: #333; }
 .wst-founder .wst-column > h2 { text-align: start; }
