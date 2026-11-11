@@ -123,6 +123,7 @@
 .os-case .os-cols { gap: 40px 64px; align-items: stretch; }
 .os-case .os-col { flex: 1 1 0; }
 .os-case .os-col > div + div { margin-top: 28px; }
+.os-case .os-text { margin-top: 8px; }
 .os-case figure img { border: 1px solid var(--border); border-radius: 12px; width: 100%; }
 
 .os-card { position: relative; border: 1px solid var(--border); border-radius: 12px; background: #fff; transition: border-color .2s, box-shadow .2s; }
@@ -160,13 +161,13 @@
 .os-page > .os-testimonials { background: #f8fafc; }
 .os-testimonials .os-cols { gap: 24px; align-items: stretch; margin-top: 40px; }
 .os-testi { display: flex; flex-direction: column; padding: 28px; }
-.os-testi > p:first-child { font-size: 1.0625rem; line-height: 1.65; color: var(--heading); padding-right: 28px; }
+.os-testi > p:first-child { font-size: 1.0625rem; line-height: 1.65; color: var(--ink); padding-right: 28px; }
 .os-testi .os-person { margin-top: auto; padding-top: 20px; gap: 12px; }
 .os-testi .os-person img { width: 48px; height: 48px; }
 .os-testi .os-person p { font-size: 15px; }
 
 /* FAQ */
-.os-page > .os-faq { border-top: 1px solid var(--border); }
+.os-page > .os-faq { background: #fff; border-top: 1px solid var(--border); }
 .os-faq h2 { margin-bottom: 24px; }
 .os-faq details { border-bottom: 1px solid var(--border); padding: 22px 0; margin: 0 auto !important; }
 .os-faq summary {
