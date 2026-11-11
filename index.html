@@ -6,227 +6,220 @@
   <title>webshop.tech – Making Tech Invisible</title>
   <meta name="description" content="Egy partner, aki a webáruházad teljes rendszerét ismeri: sebességoptimalizálás, automatizált tesztelés és proaktív hibafigyelés.">
   <meta name="robots" content="max-image-preview:large">
-  <link rel="icon" href="https://webshop.tech/wp-content/uploads/2026/09/site-icon-300x300.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="canonical" href="https://webshop.tech/">
+  <link rel="icon" href="https://webshop.tech/wp-content/uploads/2026/09/site-icon-150x150.png" sizes="150x150">
+  <link rel="apple-touch-icon" href="https://webshop.tech/wp-content/uploads/2026/09/site-icon-300x300.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="logo" href="#top" aria-label="webshop.tech">
-        <img src="https://webshop.tech/wp-content/uploads/2026/09/webshoptech-logo.svg" alt="webshop.tech" height="32">
-      </a>
-      <button class="nav-toggle" aria-label="Menü" aria-expanded="false" aria-controls="nav">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="nav" class="nav">
+  <!-- Header -->
+  <header class="wst-header">
+    <div class="wst-logo">
+      <a href="#" aria-label="webshop.tech" aria-current="page"><img src="https://webshop.tech/wp-content/uploads/2026/09/webshoptech-logo.svg" alt="webshop.tech"></a>
+    </div>
+    <div class="wst-header-right">
+      <nav aria-label="Fő menü">
         <a href="https://webshop.tech/e2e-teszteles/">E2E tesztelés</a>
-        <a class="btn btn-small" href="#kapcsolat">Kapcsolat</a>
       </nav>
+      <a class="btn btn-header" href="https://webshop.tech/kapcsolat/">Kapcsolat</a>
     </div>
   </header>
 
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero">
-      <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+  <main id="main" class="wst-home">
+
+    <!-- 1. Hero -->
+    <section class="wst-hero">
+      <video class="wst-hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
         <source src="https://webshop.tech/videos/hero-bg-blue.mp4" type="video/mp4">
       </video>
-      <div class="hero-overlay"></div>
-      <div class="container hero-inner">
+      <div class="wst-hero-inner">
         <h1>A webáruházad akkor lesz sikeres, ha mersz <mark>új dolgokat</mark> kipróbálni.</h1>
-        <p class="lead">Megmutatom, hogyan szabadulj meg a <strong>„most inkább ne piszkáljuk, nehogy szétessen”</strong> érzéstől, és hogyan lesz <strong>biztonságos játék</strong> számodra a marketinggel kísérletezni.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#kapcsolat">Dolgozzunk együtt</a>
-          <a class="btn btn-ghost" href="#kapcsolat">Vegyük fel a kapcsolatot</a>
+        <p class="wst-body">Megmutatom, hogyan szabadulj meg a <strong>„most inkább ne piszkáljuk, nehogy szétessen”</strong> érzéstől, és</p>
+        <p class="wst-body">hogyan lesz <strong>biztonságos játék</strong> számodra a marketinggel kísérletezni.</p>
+        <div class="wst-buttons">
+          <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Oq2px6XXLWTM9WnniMVq0Wd3zR3iyziKH6DjdUcLwZkag11dQ0aMFz0hbGzoFeMdiZJk7ocZG?gv=true" target="_blank" rel="noopener">Dolgozzunk együtt</a>
+          <a class="btn btn-outline" href="https://webshop.tech/kapcsolat">Vegyük fel a kapcsolatot</a>
         </div>
       </div>
     </section>
 
-    <!-- Clients -->
-    <section class="clients">
-      <div class="container">
-        <h2 class="eyebrow">Akikkel már dolgoztam</h2>
-        <ul class="logo-row">
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/auchan.svg" alt="Auchan" loading="lazy"></li>
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/wscad.svg" alt="WSCAD" loading="lazy"></li>
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/bkk.svg" alt="BKK" loading="lazy"></li>
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/fitness-index.webp" alt="Fitness Index" loading="lazy"></li>
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/szamlazzhu_logo.webp" alt="Számlázz.hu" loading="lazy"></li>
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/petchef.svg" alt="PetChef" loading="lazy"></li>
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/genertel.svg" alt="Genertel" loading="lazy"></li>
-        </ul>
+    <!-- 2. Clients -->
+    <section class="wst-section wst-section--logos">
+      <h2 class="wst-eyebrow">Akikkel már dolgoztam</h2>
+      <div class="wst-logos">
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/auchan.svg" alt="Auchan"></figure>
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/wscad.svg" alt="WSCAD"></figure>
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/bkk.svg" alt="BKK"></figure>
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/fitness-index.webp" alt="Fitness Index"></figure>
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/szamlazzhu_logo.webp" alt="Számlázz.hu"></figure>
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/petchef.svg" alt="PetChef"></figure>
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/genertel.svg" alt="Genertel"></figure>
       </div>
     </section>
 
-    <!-- Problems -->
-    <section class="problems">
-      <div class="container">
-        <h2 class="section-title">Találkoztál már azzal, hogy …</h2>
-        <div class="card-grid">
-          <article class="card reveal">
-            <h3>… a hibáknak nincs felelőse?</h3>
-            <p>A webdizájner szerint a programozót hívd fel, a programozó meg a rendszergazdához küld?</p>
-          </article>
-          <article class="card reveal">
-            <h3>… megint lassú az oldal,</h3>
-            <p>pedig már többször optimalizálták?</p>
-          </article>
-          <article class="card reveal">
-            <h3>… szét van csúszva a dizájn,</h3>
-            <p>mert frissítés után senki sem tesztelte?</p>
-          </article>
-          <article class="card reveal">
-            <h3>… az informatikus “majd visszahív”,</h3>
-            <p>de akkor sem túl készséges?</p>
-          </article>
+    <!-- 3. Problems -->
+    <section class="wst-section wst-section--alt">
+      <h2>Találkoztál már azzal, hogy …</h2>
+      <div class="wst-grid">
+        <div class="wst-icobox">
+          <svg class="wst-fa" viewBox="0 0 576 512" aria-hidden="true"><path class="fa-secondary" d="M0 144L0 272c0 8.8 7.2 16 16 16l48 0 0 80c0 8.8 7.2 16 16 16l48 0 0 80c0 8.8 7.2 16 16 16l96 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-48 0 0-32 192 0 0 32-48 0c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l96 0c8.8 0 16-7.2 16-16l0-80 48 0c8.8 0 16-7.2 16-16l0-80 48 0c8.8 0 16-7.2 16-16l0-128c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16l0 80-32 0 0-48c0-8.8-7.2-16-16-16l-48 0 0-64 48 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16l0 16-48 0c-8.8 0-16 7.2-16 16l0 48-128 0 0-48c0-8.8-7.2-16-16-16l-48 0 0-16c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l48 0 0 64-48 0c-8.8 0-16 7.2-16 16l0 48-32 0 0-80c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm160 96c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 64c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-64zm192 0c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 64c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-64z"/><path class="fa-primary" d="M176 224c-8.8 0-16 7.2-16 16l0 64c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-32 0zm192 0c-8.8 0-16 7.2-16 16l0 64c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-32 0z"/></svg>
+          <h3>… a hibáknak nincs felelőse?</h3>
+          <p class="wst-body">A webdizájner szerint a programozót hívd fel, a programozó meg a rendszergazdához küld?</p>
         </div>
-
-        <div class="callout reveal">
-          <h3>A bizonytalanság a legnagyobb baj.</h3>
-          <p>Az a legnagyobb probléma, ha nem tudod, hogy bele merj-e nyúlni a rendszerbe. Ha azt mondod, hogy most inkább ne piszkáljuk, mert most épp valahogy működik. Ha inkább elengeded az ötleteidet, csak nehogy felboruljon a rendszer, akkor nem tudsz tovább fejlődni.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#kapcsolat">Segíts</a>
-            <a class="btn btn-ghost-dark" href="#kapcsolat">Kapcsolatfelvétel</a>
-          </div>
+        <div class="wst-icobox">
+          <svg class="wst-fa" viewBox="0 0 512 512" aria-hidden="true"><path class="fa-secondary" d="M0 256a256 256 0 1 0 512 0 256 256 0 1 0 -512 0zm67.6-20.6c7-11.3 21.8-14.8 33-7.8l117.6 72.8c10.6-7.8 23.7-12.4 37.8-12.4 35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64c0-3.7 .3-7.3 .9-10.8L75.4 268.4c-11.3-7-14.8-21.8-7.8-33zM176 144a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM288 96a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm112 48a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm48 112a32 32 0 1 1 -64 0 32 32 0 1 1 64 0z"/><path class="fa-primary" d="M100.6 227.6c-11.3-7-26.1-3.5-33 7.8s-3.5 26.1 7.8 33l117.5 72.8c-.6 3.5-.9 7.1-.9 10.8 0 35.3 28.7 64 64 64s64-28.7 64-64-28.7-64-64-64c-14.1 0-27.2 4.6-37.8 12.4L100.6 227.6z"/></svg>
+          <h3>… megint lassú az oldal,</h3>
+          <p class="wst-body">pedig már többször optimalizálták?</p>
+        </div>
+        <div class="wst-icobox">
+          <svg class="wst-fa" viewBox="0 0 512 512" aria-hidden="true"><path class="fa-secondary" d="M0 165.1l0 2.6c0 112.2 139.9 242.5 212.9 298.2 12.4 9.4 27.6 14.1 43.1 14.1s30.8-4.6 43.1-14.1c73-55.7 212.9-186 212.9-298.2l0-2.6c0-73.5-59.6-133.1-133.1-133.1-30.3 0-59.2 10.3-82.4 28.6l23.1 64.7c1.1 3.2 .2 6.7-2.4 8.8l-90.7 75.6 60.4 98.1c2.1 3.4 1.4 7.8-1.7 10.4s-7.6 2.4-10.5-.3l-112-104c-1.6-1.5-2.5-3.5-2.6-5.7s.8-4.3 2.3-5.8l75.4-75.4-54.8-85.2C167.4 35.4 150.5 32 133.1 32 59.6 32 0 91.6 0 165.1z"/><path class="fa-primary" d="M296.4 60.6C286.9 68.1 278.3 77 271 87.1l-15 20.7-15-20.7C226.1 66.5 205.9 51 183 41.7l54.8 85.2-75.4 75.4c-1.5 1.5-2.4 3.6-2.3 5.8s1 4.2 2.6 5.7l112 104c2.9 2.7 7.4 2.9 10.5 .3s3.8-7 1.7-10.4l-60.4-98.1 90.7-75.6c2.6-2.1 3.5-5.7 2.4-8.8L296.4 60.6z"/></svg>
+          <h3>… szét van csúszva a dizájn,</h3>
+          <p class="wst-body">mert frissítés után senki sem tesztelte?</p>
+        </div>
+        <div class="wst-icobox">
+          <svg class="wst-fa" viewBox="0 0 576 512" aria-hidden="true"><path class="fa-secondary" d="M212.9 432.9L297.8 348c12.2 8.2 25 15.6 38.3 22.2L374.7 323c11.3-13.9 30.4-18.6 47-11.8L519 351.8c18.8 7.8 28.9 28.4 23.5 48.1l-1.5 5.5c-17.6 64.6-80.2 119.8-156.4 103.7-63-13.4-121.3-39.8-171.7-76.3z"/><path class="fa-primary" d="M26.1 544c5.4-.5 10.7-2.8 14.8-6.9L569 9.1c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L226.3 283.8c-19.9-23.6-36.6-50-49.5-78.5L221 169.3c13.9-11.3 18.6-30.4 11.8-47L192.2 25C184.3 6.1 163.7-3.9 144.1 1.4l-5.5 1.5C73.9 20.6 18.7 83.1 34.8 159.4 51.6 238.8 89.2 310.5 141.5 368.6L7 503.1c-9.4 9.4-9.4 24.6 0 33.9 4.1 4.1 9.4 6.5 14.8 6.9l4.3 0z"/></svg>
+          <h3>… az informatikus “majd visszahív”,</h3>
+          <p class="wst-body">de akkor sem túl készséges?</p>
         </div>
       </div>
     </section>
 
-    <!-- Solution -->
-    <section class="solution">
-      <div class="container">
-        <h2 class="section-title">Tudom, hogy lehet <mark>jobban</mark> is csinálni</h2>
-        <div class="feature-grid">
-          <article class="feature reveal">
-            <span class="feature-num">01</span>
-            <h3>Minden egy kézben</h3>
-            <p>Egy partner, aki az egész rendszert ismeri – mindegy, hogy fejlesztői, hálózati, vagy SEO kérdésed van, hozzám fordulhatsz.</p>
-          </article>
-          <article class="feature reveal">
-            <span class="feature-num">02</span>
-            <h3>Folyamatos sebességoptimalizálás</h3>
-            <p>A Core Web Vitals optimalizálása nem egy egyszeri feladat. Folyamatosan figyeljük a sebességet, és beavatkozunk, mielőtt a konverzión meglátszana.</p>
-          </article>
-          <article class="feature reveal">
-            <span class="feature-num">03</span>
-            <h3>Automatizált teszt minden frissítés után</h3>
-            <p>Minden frissítés után automatikusan teszteljük az oldalt – termékoldal, kosár, checkout. Nem élesben derül ki ha baj van.</p>
-          </article>
-          <article class="feature reveal">
-            <span class="feature-num">04</span>
-            <h3>Proaktív hibafigyelés</h3>
-            <p>Valós idejű monitoring figyeli az oldalt – ha bármi eltér a normálistól, mi reagálunk, nem a vásárlóid jelzik.</p>
-          </article>
-        </div>
-        <div class="actions center">
-          <a class="btn btn-primary" href="#kapcsolat">Dolgozzunk együtt</a>
-          <a class="btn btn-ghost-dark" href="#kapcsolat">Kapcsolatfelvétel</a>
-        </div>
+    <!-- 4. Uncertainty -->
+    <section class="wst-section wst-section--uncertainty">
+      <div class="wst-icobox wst-icobox--lg">
+        <svg class="wst-fa" viewBox="0 0 512 512" aria-hidden="true"><path class="fa-secondary" d="M0 256a256 256 0 1 0 512 0 256 256 0 1 0 -512 0zm178.8-42.8c0-42.6 34.6-77.2 77.2-77.2s77.2 34.6 77.2 77.2c0 45.5-34.5 64.7-53.7 71.8-2.3 10.8-11.9 19-23.5 19-13.3 0-24-10.7-24-24 0-20.2 14.6-34.6 29.5-39.5 6-2 12.3-5.1 16.8-9.5 3.9-3.8 6.9-9 6.9-17.7 0-16.1-13.1-29.2-29.2-29.2s-29.2 13.1-29.2 29.2c0 13.3-10.7 24-24 24s-24-10.7-24-24zM284 352a28 28 0 1 1 -56 0 28 28 0 1 1 56 0z"/><path class="fa-primary" d="M226.8 213.2c0-16.1 13.1-29.2 29.2-29.2s29.2 13.1 29.2 29.2c0 8.7-3.1 13.9-6.9 17.7-4.5 4.4-10.7 7.5-16.8 9.5-14.9 5-29.5 19.3-29.5 39.5 0 13.3 10.7 24 24 24 11.5 0 21.2-8.1 23.5-19 19.2-7.1 53.7-26.3 53.7-71.8 0-42.6-34.6-77.2-77.2-77.2s-77.2 34.6-77.2 77.2c0 13.3 10.7 24 24 24s24-10.7 24-24zM256 380a28 28 0 1 0 0-56 28 28 0 1 0 0 56z"/></svg>
+        <h3>A bizonytalanság a legnagyobb baj.</h3>
+        <p class="wst-body">Az a legnagyobb probléma, ha nem tudod, hogy bele merj-e nyúlni a rendszerbe. Ha azt mondod, hogy most inkább ne piszkáljuk, mert most épp valahogy működik. Ha inkább elengeded az ötleteidet, csak nehogy felboruljon a rendszer, akkor nem tudsz tovább fejlődni.</p>
+      </div>
+      <div class="wst-buttons">
+        <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Oq2px6XXLWTM9WnniMVq0Wd3zR3iyziKH6DjdUcLwZkag11dQ0aMFz0hbGzoFeMdiZJk7ocZG?gv=true" target="_blank" rel="noopener">Segíts</a>
+        <a class="btn btn-outline" href="https://webshop.tech/kapcsolat">Kapcsolatfelvétel</a>
       </div>
     </section>
 
-    <!-- Stack -->
-    <section class="stack">
-      <div class="container">
-        <h2 class="section-title">Technológiai stack</h2>
-        <p class="section-sub">Ezeket az eszközöket használom nap mint nap – nem azért, mert trendiek, hanem mert működnek.</p>
-        <ul class="logo-row logo-row-gray">
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/wordfence-gray.svg" alt="Wordfence" loading="lazy"></li>
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/playwright-gray.svg" alt="Playwright" loading="lazy"></li>
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/cloudflare-gray.svg" alt="Cloudflare" loading="lazy"></li>
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/digitalocean-gray.svg" alt="DigitalOcean" loading="lazy"></li>
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/nginx-gray.svg" alt="NGINX" loading="lazy"></li>
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/aws-gray.svg" alt="AWS" loading="lazy"></li>
-          <li><img src="https://webshop.tech/wp-content/uploads/2026/09/sentry-gray.svg" alt="Sentry" loading="lazy"></li>
-        </ul>
+    <!-- 5. Solution -->
+    <section class="wst-section wst-section--alt wst-section--solution">
+      <h2 class="wst-curly">Tudom, hogy lehet <mark>jobban</mark> is csinálni</h2>
+      <div class="wst-grid">
+        <div class="wst-icobox">
+          <svg class="wst-fa" viewBox="0 0 576 512" aria-hidden="true"><path class="fa-secondary" d="M0 192l0 352 144-136 12.4 10.3c23 19.2 52 29.7 81.9 29.7l15.7 0-7-7c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l41 41 9 0c19.1 0 37.8-4.3 54.8-12.3L359 409c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l32 32 17.5-17.5c8.9-8.9 11.5-21.8 7.6-33.1l-137.9-136.8-14.9 14.9c-49.3 49.3-129.1 49.3-178.4 0-23-23-23.9-59.9-2.2-84L223.4 32 183.8 32c-25.5 0-49.9 10.1-67.9 28.1L0 192z"/><path class="fa-primary" d="M152.3 182.8L268.9 53.2C281.1 39.7 298.4 32 316.5 32l70.4 0c19 0 37.5 5.6 53.3 16.1L464 64 576 0 576 288 505.6 344 329 168.8c-9.4-9.3-24.5-9.3-33.9 .1l-31.8 31.8c-30.5 30.5-80 30.5-110.5 0-4.9-4.9-5.1-12.8-.5-17.9z"/></svg>
+          <h3>Minden egy kézben</h3>
+          <p class="wst-body">Egy partner, aki az egész rendszert ismeri – mindegy, hogy fejlesztői, hálózati, vagy SEO kérdésed van, hozzám fordulhatsz.</p>
+        </div>
+        <div class="wst-icobox">
+          <svg class="wst-fa" viewBox="0 0 512 512" aria-hidden="true"><path class="fa-secondary" d="M0 256a256 256 0 1 0 512 0 256 256 0 1 0 -512 0zm128 0a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm48-112a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm16 208c0-35.3 28.7-64 64-64 14.5 0 27.8 4.8 38.5 12.9l109.1-65.5c11.4-6.8 26.1-3.1 32.9 8.2s3.1 26.1-8.2 32.9L319.2 342.1c.5 3.2 .8 6.6 .8 9.9 0 35.3-28.7 64-64 64s-64-28.7-64-64zM288 96a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm112 48a32 32 0 1 1 -64 0 32 32 0 1 1 64 0z"/><path class="fa-primary" d="M403.7 235.4c11.4-6.8 26.1-3.1 32.9 8.2s3.1 26.1-8.2 32.9L319.2 342.1c.5 3.2 .8 6.6 .8 9.9 0 35.3-28.7 64-64 64s-64-28.7-64-64 28.7-64 64-64c14.5 0 27.8 4.8 38.5 12.9l109.1-65.5z"/></svg>
+          <h3>Folyamatos sebességoptimalizálás</h3>
+          <p class="wst-body">A Core Web Vitals optimalizálása nem egy egyszeri feladat. Folyamatosan figyeljük a sebességet, és beavatkozunk, mielőtt a konverzión meglátszana.</p>
+        </div>
+        <div class="wst-icobox">
+          <svg class="wst-fa" viewBox="0 0 384 512" aria-hidden="true"><path class="fa-secondary" d="M0 96L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-352c0-35.3-28.7-64-64-64l-8.6 0C300.4 12.9 279.7 0 256 0L128 0C104.3 0 83.6 12.9 72.6 32L64 32C28.7 32 0 60.7 0 96zM57.9 244.9c-6.6-8.3-5.3-20.4 3-27s20.4-5.3 27 3l10 12.5 30.3-37.5c6.7-8.2 18.8-9.5 27-2.8s9.5 18.8 2.8 27l-45.3 56c-3.7 4.5-9.2 7.1-15 7.1s-11.3-2.7-14.9-7.2L57.9 244.9zM128 384a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM112 88c0-13.3 10.7-24 24-24l112 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-112 0c-13.3 0-24-10.7-24-24zm64 168c0-13.3 10.7-24 24-24l96 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-96 0c-13.3 0-24-10.7-24-24zm0 128c0-13.3 10.7-24 24-24l96 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-96 0c-13.3 0-24-10.7-24-24z"/><path class="fa-primary" d="M158 220.1c6.7-8.2 5.4-20.3-2.8-27s-20.3-5.4-27 2.8l-30.3 37.5-10-12.5c-6.6-8.3-18.7-9.6-27-3s-9.6 18.7-3 27L82.8 276c3.6 4.5 9.1 7.2 14.9 7.2s11.3-2.6 15-7.1l45.3-56zM200 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l96 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-96 0zm0 128c-13.3 0-24 10.7-24 24s10.7 24 24 24l96 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-96 0zm-72 24a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+          <h3>Automatizált teszt minden frissítés után</h3>
+          <p class="wst-body">Minden frissítés után automatikusan teszteljük az oldalt – termékoldal, kosár, checkout. Nem élesben derül ki ha baj van.</p>
+        </div>
+        <div class="wst-icobox">
+          <svg class="wst-fa" viewBox="0 0 576 512" aria-hidden="true"><path class="fa-secondary" d="M0 416l0 64c0 17.7 14.3 32 32 32l320.5 0c29 0 57.3-9.3 80.7-26.5l126.6-93.3c17.8-13.1 21.6-38.1 8.5-55.9s-38.1-21.6-55.9-8.5L392.6 416 280 416c-13.3 0-24-10.7-24-24s10.7-24 24-24l72 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-152.2 0c-33.9 0-66.5 13.5-90.5 37.5L66.7 384 32 384c-17.7 0-32 14.3-32 32z"/><path class="fa-primary" d="M96 14.5C96 6.5 102.5 0 110.5 0L160 0c52.3 0 98.8 25.1 128 64 29.2-38.9 75.7-64 128-64l49.5 0c8 0 14.5 6.5 14.5 14.5 0 80.3-65.1 145.5-145.5 145.5l-14.5 0 0 64c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-64-14.5 0C161.1 160 96 94.9 96 14.5z"/></svg>
+          <h3>Proaktív hibafigyelés</h3>
+          <p class="wst-body">Valós idejű monitoring figyeli az oldalt – ha bármi eltér a normálistól, mi reagálunk, nem a vásárlóid jelzik.</p>
+        </div>
+      </div>
+      <div class="wst-buttons">
+        <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Oq2px6XXLWTM9WnniMVq0Wd3zR3iyziKH6DjdUcLwZkag11dQ0aMFz0hbGzoFeMdiZJk7ocZG?gv=true" target="_blank" rel="noopener">Dolgozzunk együtt</a>
+        <a class="btn btn-outline" href="https://webshop.tech/kapcsolat">Kapcsolatfelvétel</a>
       </div>
     </section>
 
-    <!-- About -->
-    <section class="about">
-      <div class="container about-inner">
-        <figure class="about-photo reveal">
-          <img src="https://webshop.tech/wp-content/uploads/2026/09/gabor-300x300-1.jpg" alt="Angyal Gábor" width="300" height="300" loading="lazy">
-          <figcaption>
-            <strong>Angyal Gábor</strong>,<br>
-            <a href="https://www.linkedin.com/in/gaborangyal/" target="_blank" rel="noopener">okleveles programtervező informatikus</a>
-          </figcaption>
-        </figure>
-        <div class="about-text reveal">
+    <!-- 6. Tech stack -->
+    <section class="wst-section wst-section--logos wst-section--stack">
+      <h2>Technológiai stack</h2>
+      <p class="wst-body">Ezeket az eszközöket használom nap mint nap – nem azért, mert trendiek, hanem mert működnek.</p>
+      <div class="wst-logos">
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/wordfence-gray.svg" alt="Wordfence"></figure>
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/playwright-gray.svg" alt="Playwright"></figure>
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/cloudflare-gray.svg" alt="Cloudflare"></figure>
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/digitalocean-gray.svg" alt="DigitalOcean"></figure>
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/nginx-gray.svg" alt="NGINX"></figure>
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/aws-gray.svg" alt="AWS"></figure>
+        <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/sentry-gray.svg" alt="Sentry"></figure>
+      </div>
+    </section>
+
+    <!-- 7. Founder -->
+    <section class="wst-section wst-section--alt">
+      <div class="wst-columns wst-founder">
+        <div class="wst-column wst-column--img">
+          <figure class="wst-founder-img">
+            <img src="https://webshop.tech/wp-content/uploads/2026/09/gabor-300x300-1.jpg" alt="Angyal Gábor" width="320" height="320">
+            <figcaption><strong>Angyal Gábor</strong>,<br><a href="https://www.linkedin.com/in/gaborangyal/" target="_blank" rel="noreferrer noopener">okleveles programtervező informatikus</a></figcaption>
+          </figure>
+        </div>
+        <div class="wst-column">
           <h2>Szia, Angyal Gábor vagyok.</h2>
-          <p>Több mint tíz évig dolgoztam nagyvállalatoknak és nemzetközi cégeknek. Fejlesztettem CAD rendszert, orvosi diagnosztikai szoftvert és biztosítási ügyfélportált is. Technikailag izgalmas munkák voltak, de ritkán láttam, mi történik a fejlesztői munka után. Leadtam a projektet, és mentem tovább a következő feladatra. Alig találkoztam olyan emberrel, akire hatással lett volna a munkám.</p>
-          <p>Amióta, öt évvel ezelőtt, webáruház tulajdonosokkal kezdtem dolgozni, ez teljesen megváltozott. Ha megjavítok egy hibát, ismét megy a bolt. Ha felgyorsítom a vásárlás folyamatát, látom, hogy nő a rendelésszám. Büszke vagyok rá, hogy kis és közepes magyar cégek jobban működnek az én munkám hatására.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#kapcsolat">Beszéljünk személyesen</a>
-            <a class="btn btn-ghost-dark" href="#kapcsolat">Még csak érdeklődöm</a>
+          <p class="wst-body">Több mint tíz évig dolgoztam nagyvállalatoknak és nemzetközi cégeknek. Fejlesztettem CAD rendszert, orvosi diagnosztikai szoftvert és biztosítási ügyfélportált is. Technikailag izgalmas munkák voltak, de ritkán láttam, mi történik a fejlesztői munka után. Leadtam a projektet, és mentem tovább a következő feladatra. Alig találkoztam olyan emberrel, akire hatással lett volna a munkám.</p>
+          <p class="wst-body">Amióta, öt évvel ezelőtt, webáruház tulajdonosokkal kezdtem dolgozni, ez teljesen megváltozott. Ha megjavítok egy hibát, ismét megy a bolt. Ha felgyorsítom a vásárlás folyamatát, látom, hogy nő a rendelésszám. Büszke vagyok rá, hogy kis és közepes magyar cégek jobban működnek az én munkám hatására.</p>
+          <div class="wst-buttons wst-buttons--left">
+            <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Oq2px6XXLWTM9WnniMVq0Wd3zR3iyziKH6DjdUcLwZkag11dQ0aMFz0hbGzoFeMdiZJk7ocZG?gv=true" target="_blank" rel="noopener">Beszéljünk személyesen</a>
+            <a class="btn btn-outline" href="https://webshop.tech/kapcsolat">Még csak érdeklődöm</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-      <div class="container">
-        <h2 class="section-title">Rólam mondták</h2>
-        <div class="quote-grid">
-          <figure class="quote reveal">
-            <blockquote>Több fejlesztővel is dolgoztunk, mielőtt Gáborékhoz került a webshopunk. Kicsit már kezdtük feladni, hogy a több mint 1000 termékes, oldalunk soha nem lesz megfelelő gyorsaságú. Nekik köszönhetően azóta desktopon és mobilon is tökéletesen gyors a webshop, ami meglátszik a vásárlások számán, a felhasználók weboldalon töltött idején és a Google rangsoroláson is.</blockquote>
-            <figcaption>
-              <img src="https://webshop.tech/wp-content/uploads/2026/09/viki.webp" alt="Kasziba Viktória" width="56" height="56" loading="lazy">
-              <span><strong>Kasziba Viktória</strong><br>fitness-index.hu</span>
-            </figcaption>
-          </figure>
-          <figure class="quote reveal">
-            <blockquote>Biztosító partnerünk weboldalainak betöltési sebesség optimalizálásához kértük fel Gábort tanácsadónak, hogy segítse a csapatunk munkáját. Kiválóan tudtunk vele együttműködni, pontosan feltárta a teljesítményproblémák okait, és érthetően kommunikálta megoldási javaslatait a csapatunk felé.</blockquote>
-            <figcaption>
-              <img src="https://webshop.tech/wp-content/uploads/2026/09/norbi.webp" alt="Barics Norbert" width="56" height="56" loading="lazy">
-              <span><strong>Barics Norbert</strong><br>infocompass.hu</span>
-            </figcaption>
-          </figure>
-          <figure class="quote reveal">
-            <blockquote>Gáborékkal igazán gördülékeny a kommunikáció és a közös munka. A megbeszélt projektekre pontos árajánlatokat kaptam, és az átadásra is mindig határidőn belül került sor. Gyorsak, pontosak és rugalmasak. Ajánlom őket bárkinek, aki szeretné webshopja fejlesztését szakértőkre bízni.</blockquote>
-            <figcaption>
-              <img src="https://webshop.tech/wp-content/uploads/2026/09/dani.webp" alt="Grim Dániel" width="56" height="56" loading="lazy">
-              <span><strong>Grim Dániel</strong><br>petchef.hu</span>
-            </figcaption>
-          </figure>
+    <!-- 8. Testimonials -->
+    <section class="wst-section wst-section--testi">
+      <h2>Rólam mondták</h2>
+      <div class="wst-columns">
+        <div class="wst-column wst-testi">
+          <p>Több fejlesztővel is dolgoztunk, mielőtt Gáborékhoz került a webshopunk. Kicsit már kezdtük feladni, hogy a több mint 1000 termékes, oldalunk soha nem lesz megfelelő gyorsaságú. Nekik köszönhetően azóta desktopon és mobilon is tökéletesen gyors a webshop, ami meglátszik a vásárlások számán, a felhasználók weboldalon töltött idején és a Google rangsoroláson is.</p>
+          <div class="wst-testi-foot">
+            <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/viki.webp" alt="Kasziba Viktória" width="60" height="60" loading="lazy"></figure>
+            <p><strong>Kasziba Viktória</strong><br>fitness-index.hu</p>
+          </div>
+        </div>
+        <div class="wst-column wst-testi">
+          <p>Biztosító partnerünk weboldalainak betöltési sebesség optimalizálásához kértük fel Gábort tanácsadónak, hogy segítse a csapatunk munkáját. Kiválóan tudtunk vele együttműködni, pontosan feltárta a teljesítményproblémák okait, és érthetően kommunikálta megoldási javaslatait a csapatunk felé.</p>
+          <div class="wst-testi-foot">
+            <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/norbi.webp" alt="Barics Norbert" width="60" height="60" loading="lazy"></figure>
+            <p><strong>Barics Norbert</strong><br>infocompass.hu</p>
+          </div>
+        </div>
+        <div class="wst-column wst-testi">
+          <p>Gáborékkal igazán gördülékeny a kommunikáció és a közös munka. A megbeszélt projektekre pontos árajánlatokat kaptam, és az átadásra is mindig határidőn belül került sor. Gyorsak, pontosak és rugalmasak. Ajánlom őket bárkinek, aki szeretné webshopja fejlesztését szakértőkre bízni.</p>
+          <div class="wst-testi-foot">
+            <figure><img src="https://webshop.tech/wp-content/uploads/2026/09/dani.webp" alt="Grim Dániel" width="60" height="60" loading="lazy"></figure>
+            <p><strong>Grim Dániel</strong><br>petchef.hu</p>
+          </div>
         </div>
       </div>
     </section>
-
-    <p class="privacy-note container">Adataidnak védelme valóban fontos a számomra, ezért ez az oldal <strong>nem használ</strong> sem marketing sem statisztikai <strong>cookie-kat</strong>.</p>
   </main>
 
-  <footer class="site-footer" id="kapcsolat">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="#top" aria-label="webshop.tech">
-          <img src="https://webshop.tech/wp-content/uploads/2026/09/webshoptech-logo.svg" alt="webshop.tech" height="32" loading="lazy">
-        </a>
+  <!-- Footer -->
+  <footer class="wst-footer">
+    <p class="wst-footer-note">Adataidnak védelme valóban fontos a számomra, ezért ez az oldal <strong>nem használ</strong> sem marketing sem statisztikai <strong>cookie-kat</strong>.</p>
+    <div class="wst-columns wst-footer-cols">
+      <div class="wst-column wst-logo">
+        <a href="#" aria-label="webshop.tech"><img src="https://webshop.tech/wp-content/uploads/2026/09/webshoptech-logo.svg" alt="webshop.tech" loading="lazy"></a>
       </div>
-      <div>
+      <div class="wst-column">
         <h2>Kapcsolat</h2>
-        <p><a id="email-link" href="#" data-user="gabor" data-domain="webshop.tech">gabor [at] webshop.tech</a></p>
+        <p><a href="mailto:gabor@webshop.tech">gabor@webshop.tech</a></p>
       </div>
-      <div>
+      <div class="wst-column">
         <h2>Linkek</h2>
         <p>
           <a href="https://webshop.tech/wp-content/uploads/2026/09/adatkezeles_26_09_03.pdf" target="_blank" rel="noopener">Adatkezelési Tájékoztató</a><br>
           <a href="https://webshop.tech/wp-content/uploads/2026/09/aszf_26_09_03.pdf" target="_blank" rel="noopener">Általános Szerződési Feltételek</a>
         </p>
-        <ul class="social">
-          <li><a href="https://www.facebook.com/the.webshop.tech" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://github.com/agabor" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/gaborangyal/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://profiles.wordpress.org/gaborangyal/" target="_blank" rel="noopener">WordPress</a></li>
-        </ul>
       </div>
     </div>
+    <ul class="wst-social">
+      <li><a href="https://www.facebook.com/the.webshop.tech" target="_blank" rel="noopener" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"/></svg></a></li>
+      <li><a href="https://github.com/agabor" target="_blank" rel="noopener" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12,2C6.477,2,2,6.477,2,12c0,4.419,2.865,8.166,6.839,9.489c0.5,0.09,0.682-0.218,0.682-0.484 c0-0.236-0.009-0.866-0.014-1.699c-2.782,0.602-3.369-1.34-3.369-1.34c-0.455-1.157-1.11-1.465-1.11-1.465 c-0.909-0.62,0.069-0.608,0.069-0.608c1.004,0.071,1.532,1.03,1.532,1.03c0.891,1.529,2.341,1.089,2.91,0.833 c0.091-0.647,0.349-1.086,0.635-1.337c-2.22-0.251-4.555-1.111-4.555-4.943c0-1.091,0.39-1.984,1.03-2.682 C6.546,8.54,6.202,7.524,6.746,6.148c0,0,0.84-0.269,2.75,1.025C10.295,6.95,11.15,6.84,12,6.836 c0.85,0.004,1.705,0.114,2.504,0.336c1.909-1.294,2.748-1.025,2.748-1.025c0.546,1.376,0.202,2.394,0.1,2.646 c0.64,0.699,1.026,1.591,1.026,2.682c0,3.841-2.337,4.687-4.565,4.935c0.359,0.307,0.679,0.917,0.679,1.852 c0,1.335-0.012,2.415-0.012,2.741c0,0.269,0.18,0.579,0.688,0.481C19.138,20.161,22,16.416,22,12C22,6.477,17.523,2,12,2z"/></svg></a></li>
+      <li><a href="https://www.linkedin.com/in/gaborangyal/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.7,3H4.3C3.582,3,3,3.582,3,4.3v15.4C3,20.418,3.582,21,4.3,21h15.4c0.718,0,1.3-0.582,1.3-1.3V4.3 C21,3.582,20.418,3,19.7,3z M8.339,18.338H5.667v-8.59h2.672V18.338z M7.004,8.574c-0.857,0-1.549-0.694-1.549-1.548 c0-0.855,0.691-1.548,1.549-1.548c0.854,0,1.547,0.694,1.547,1.548C8.551,7.881,7.858,8.574,7.004,8.574z M18.339,18.338h-2.669 v-4.177c0-0.996-0.017-2.278-1.387-2.278c-1.389,0-1.601,1.086-1.601,2.206v4.249h-2.667v-8.59h2.559v1.174h0.037 c0.356-0.675,1.227-1.387,2.526-1.387c2.703,0,3.203,1.779,3.203,4.092V18.338z"/></svg></a></li>
+      <li><a href="https://profiles.wordpress.org/gaborangyal/" target="_blank" rel="noopener" aria-label="WordPress"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.158,12.786L9.46,20.625c0.806,0.237,1.657,0.366,2.54,0.366c1.047,0,2.051-0.181,2.986-0.51 c-0.024-0.038-0.046-0.079-0.065-0.124L12.158,12.786z M3.009,12c0,3.559,2.068,6.634,5.067,8.092L3.788,8.341 C3.289,9.459,3.009,10.696,3.009,12z M18.069,11.546c0-1.112-0.399-1.881-0.741-2.48c-0.456-0.741-0.883-1.368-0.883-2.109 c0-0.826,0.627-1.596,1.51-1.596c0.04,0,0.078,0.005,0.116,0.007C16.472,3.904,14.34,3.009,12,3.009 c-3.141,0-5.904,1.612-7.512,4.052c0.211,0.007,0.41,0.011,0.579,0.011c0.94,0,2.396-0.114,2.396-0.114 C7.947,6.93,8.004,7.642,7.52,7.699c0,0-0.487,0.057-1.029,0.085l3.274,9.739l1.968-5.901l-1.401-3.838 C9.848,7.756,9.389,7.699,9.389,7.699C8.904,7.67,8.961,6.93,9.446,6.958c0,0,1.484,0.114,2.368,0.114 c0.94,0,2.397-0.114,2.397-0.114c0.485-0.028,0.542,0.684,0.057,0.741c0,0-0.488,0.057-1.029,0.085l3.249,9.665l0.897-2.996 C17.841,13.284,18.069,12.316,18.069,11.546z M19.889,7.686c0.039,0.286,0.06,0.593,0.06,0.924c0,0.912-0.171,1.938-0.684,3.22 l-2.746,7.94c2.673-1.558,4.47-4.454,4.47-7.771C20.991,10.436,20.591,8.967,19.889,7.686z M12,22C6.486,22,2,17.514,2,12 C2,6.486,6.486,2,12,2c5.514,0,10,4.486,10,10C22,17.514,17.514,22,12,22z"/></svg></a></li>
+    </ul>
   </footer>
 
   <script src="js/main.js"></script>
