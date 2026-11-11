@@ -37,7 +37,7 @@
 
 /* columns (WordPress-style) */
 .os-cols { display: flex; flex-wrap: nowrap; align-items: stretch; gap: 32px 56px; }
-.os-cols > .os-col { min-width: 0; flex: 1 1 0; }
+.os-cols > .os-col { min-width: 0; flex: 1 1 0; overflow-wrap: break-word; word-break: break-word; }
 .os-cols--center { align-items: center; }
 .os-page > section > .os-cols + *, .os-page > section > * + .os-cols { margin-top: 48px; }
 
