@@ -201,7 +201,7 @@ a:hover { color: var(--blue); text-decoration: underline; }
 
 /* ---------- Sections ---------- */
 .wst-section { padding: 48px 16px; }
-.wst-section > * { max-width: 1440px; margin-left: auto; margin-right: auto; }
+.wst-home .wst-section > * { max-width: 1440px; margin-left: auto; margin-right: auto; }
 .wst-section--alt {
   background: var(--bg-alt);
   border-top: 1px solid var(--border);
@@ -315,6 +315,7 @@ a:hover { color: var(--blue); text-decoration: underline; }
   color: var(--ink);
 }
 .wst-footer > * { max-width: 1440px; margin-left: auto; margin-right: auto; }
+.wst-footer > p { margin-left: auto; margin-right: auto; }
 .wst-footer p { margin: 0; text-align: center; }
 .wst-footer-cols { align-items: center; gap: 20px; margin-top: 24px; }
 .wst-footer-cols .wst-column { text-align: center; }
