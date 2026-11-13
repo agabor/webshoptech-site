@@ -1,0 +1,24 @@
+name = "webshop-contact"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# Serve the endpoint on the webshop.tech zone (the zone must be on your Cloudflare account).
+# Only this path is routed to the Worker; the rest of the site is untouched.
+routes = [
+  { pattern = "webshop.tech/api/contact*", zone_name = "webshop.tech" }
+]
+
+# Email Routing "send_email" binding. Messages may only go to a verified destination address.
+[[send_email]]
+name = "EMAIL"
+destination_address = "gabor@webshop.tech"
+
+[vars]
+# Mailbox that receives the messages (must be a verified Email Routing destination address).
+TO_ADDRESS = "gabor@webshop.tech"
+# Sender address: must be on a domain with Email Routing enabled, e.g. kapcsolat@webshop.tech.
+FROM_ADDRESS = "kapcsolat@webshop.tech"
+# Pages allowed to call the endpoint (comma separated, no trailing slashes).
+ALLOWED_ORIGINS = "https://agabor.github.io,https://webshop.tech,https://www.webshop.tech"
+
+# Secret (not stored here): wrangler secret put TURNSTILE_SECRET

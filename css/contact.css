@@ -1,0 +1,49 @@
+/* Contact page (/kapcsolat/). Shares header, footer and buttons with the other pages. */
+.ct-page {
+  margin-top: 24px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px; line-height: 1.5; color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+.ct-section { padding: clamp(4rem, 7vw, 6.5rem) 16px; }
+.ct-section > * { max-width: 640px; margin-left: auto; margin-right: auto; }
+.ct-page h1 {
+  margin: 0; font-family: Tahoma, Verdana, sans-serif; font-weight: 600;
+  font-size: 44px; line-height: 1.1; color: var(--heading); text-align: center;
+}
+.ct-intro { margin: 16px auto 0; text-align: center; line-height: 1.6; }
+
+.ct-form { margin-top: 40px; display: flex; flex-direction: column; gap: 20px; }
+.ct-field label, .ct-check label { display: block; font-weight: 600; font-size: 16px; margin-bottom: 6px; color: var(--heading); }
+.ct-check label { margin: 0; font-weight: 400; cursor: pointer; }
+.ct-field input, .ct-field select, .ct-field textarea {
+  display: block; width: 100%; box-sizing: border-box;
+  padding: 12px 14px; font: inherit; font-size: 16px; color: var(--ink);
+  background: #fff; border: 1px solid #CBD5E1; border-radius: 6px;
+  transition: border-color .15s, box-shadow .15s;
+}
+.ct-field textarea { resize: vertical; min-height: 140px; }
+.ct-field input:focus, .ct-field select:focus, .ct-field textarea:focus {
+  outline: none; border-color: var(--blue-bright); box-shadow: 0 0 0 3px rgba(0, 117, 222, .2);
+}
+.ct-field.has-error input, .ct-field.has-error select, .ct-field.has-error textarea { border-color: #CF222E; }
+.ct-error { margin: 6px 0 0; font-size: 14px; line-height: 1.4; color: #CF222E; }
+.ct-error[hidden], .ct-status[hidden] { display: none; }
+.ct-check { display: flex; align-items: center; gap: 10px; }
+.ct-check input { width: 18px; height: 18px; margin: 0; accent-color: var(--blue); }
+
+/* honeypot: out of sight for people, still in the DOM for bots */
+.ct-hp { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+
+.ct-submit { align-self: flex-start; border: 0; cursor: pointer; padding: 14px 32px; font-size: 16px; }
+.ct-submit[disabled] { opacity: .6; cursor: progress; transform: none; }
+.ct-status { margin: 0; padding: 14px 16px; border-radius: 6px; font-size: 16px; line-height: 1.5; }
+.ct-status.is-ok { background: #E6F3FE; color: #005BAB; border: 1px solid #B6DAF7; }
+.ct-status.is-error { background: #FDECEC; color: #A51D27; border: 1px solid #F5C2C6; }
+.ct-form.is-sent .ct-field, .ct-form.is-sent .ct-check, .ct-form.is-sent .ct-submit, .ct-form.is-sent .ct-turnstile { display: none; }
+
+@media (max-width: 767px) {
+  .ct-page h1 { font-size: 30px; }
+  .ct-page { font-size: 16px; }
+  .ct-submit { align-self: stretch; }
+}
