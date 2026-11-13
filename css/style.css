@@ -395,3 +395,35 @@ a:hover { color: var(--blue); text-decoration: underline; }
   .wst-home .btn:hover { transform: none; }
   .wst-logos.is-marquee .wst-marquee-track { animation: none; }
 }
+
+/* ---------- Booking modal ---------- */
+.wst-modal {
+  position: fixed; inset: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, .5);
+}
+.wst-modal[hidden] { display: none; }
+.wst-modal-box {
+  position: relative;
+  width: 100%; max-width: 760px; height: min(90vh, 760px);
+  background: #fff; border-radius: 8px; overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, .35);
+}
+.wst-modal-frame { display: block; width: 100%; height: 100%; border: 0; opacity: 0; transition: opacity .2s; }
+.wst-modal.is-loaded .wst-modal-frame { opacity: 1; }
+.wst-modal-loading {
+  position: absolute; top: 50%; left: 50%; width: 32px; height: 32px; margin: -16px 0 0 -16px;
+  border: 3px solid var(--border); border-top-color: var(--blue); border-radius: 50%;
+  animation: wst-modal-spin .8s linear infinite;
+}
+.wst-modal.is-loaded .wst-modal-loading { display: none; }
+.wst-modal-close {
+  position: absolute; top: 6px; right: 8px; z-index: 2;
+  width: 36px; height: 36px; padding: 0; border: 0; border-radius: 50%;
+  background: rgba(255, 255, 255, .9); color: #444; font-size: 28px; line-height: 1; cursor: pointer;
+}
+.wst-modal-close:hover { background: #eee; }
+html.wst-modal-open { overflow: hidden; }
+@keyframes wst-modal-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .wst-modal-loading { animation: none; } }
